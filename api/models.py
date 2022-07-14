@@ -3,6 +3,9 @@ from django.db import models
 
 # Create your models here.
 class Student(models.Model):
-    name = models.CharField(max_length=100)
-    roll_number = models.IntegerField()
-    city = models.CharField(max_length=100)
+    productId = models.IntegerField(blank=True, default=0)
+    customerId = models.IntegerField(blank=True, default=0)
+    total = models.IntegerField(blank=True, default=0)
+    discount = models.FloatField(blank=True, default=0)
+    subTotal = models.FloatField(blank=True, default=0)
+    qty = models.IntegerField(blank=True, default=0)

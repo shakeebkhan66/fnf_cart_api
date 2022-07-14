@@ -5,4 +5,4 @@ from .models import Student
 # Register your models here.
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'roll_number', 'city']
+    list_display = ['id', 'productId', 'customerId', 'total', 'discount', 'subTotal', 'qty']
